@@ -1,0 +1,13 @@
+{
+  "release": {
+    "download_link": "https://yum-wrapper.s3.us-east-1.amazonaws.com/packages/yum_wrapper-{}-py3-none-any.whl"
+  },
+  "releases": {
+    "0.0.1": {
+      "release_notes": [
+        "",
+        ""
+      ]
+    }
+  }
+}
