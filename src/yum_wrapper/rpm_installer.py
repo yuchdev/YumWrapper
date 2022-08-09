@@ -54,9 +54,9 @@ class RpmInstaller:
     Install packages on RPM-based Linux distribution
     """
 
-    def __init__(self, tool: str):
+    def __init__(self, tool: str = yum):
         """
-        :param tool: either 'yum' or 'dnf'
+        :param tool: 'yum' by default
         """
         self.tool = tool
 
@@ -118,6 +118,7 @@ class RpmInstaller:
         elif packages and isinstance(packages, str):
             base_cmd += [packages]
 
+        # TODO: sort out situation with only installed or only available
         ret_code, packages = execute(base_cmd)
         installed_index = packages.index('Installed Packages')
         available_index = packages.index('Available Packages')
