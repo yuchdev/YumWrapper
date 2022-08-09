@@ -2,7 +2,6 @@ import os.path
 import argparse
 import sys
 from package_helper import execute, read_packagefile
-from log_helper import logger
 from path_utils import home_dir
 
 
