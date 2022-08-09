@@ -1,0 +1,13 @@
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+Loading mirror speeds from cached hostfile
+ * base: mirror.sabay.com.kh
+ * centos-sclo-rh: mirror.sabay.com.kh
+ * epel: mirror.sabay.com.kh
+ * extras: mirror.sabay.com.kh
+ * updates: mirror.sabay.com.kh
+Installed Packages
+firefox.x86_64                                                                 91.10.0-1.el7.centos                                                   @updates
+Available Packages
+firefox.i686                                                                   91.10.0-1.el7.centos                                                   updates 
+firefox-noscript.noarch                                                        11.0.3-3.el7                                                           epel    
+firefox-pkcs11-loader.x86_64                                                   3.13.6-1.el7                                                           epel    

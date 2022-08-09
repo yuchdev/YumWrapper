@@ -1,0 +1,43 @@
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+Loading mirror speeds from cached hostfile
+ * base: mirror.sabay.com.kh
+ * centos-sclo-rh: mirror.sabay.com.kh
+ * epel: mirror.sabay.com.kh
+ * extras: mirror.sabay.com.kh
+ * updates: mirror.sabay.com.kh
+package: sysstat.x86_64 10.1.5-19.el7
+  dependency: /bin/sh
+   provider: bash.x86_64 4.2.46-35.el7_9
+  dependency: /etc/cron.d
+   provider: cronie.x86_64 1.4.11-24.el7_9
+  dependency: fileutils
+   provider: coreutils.x86_64 8.22-24.el7_9.2
+  dependency: grep
+   provider: grep.x86_64 2.20-3.el7
+  dependency: libc.so.6(GLIBC_2.14)(64bit)
+   provider: glibc.x86_64 2.17-326.el7_9
+  dependency: libsensors.so.4()(64bit)
+   provider: lm_sensors-libs.x86_64 3.4.0-8.20160601gitf9185e5.el7
+  dependency: rtld(GNU_HASH)
+   provider: glibc.x86_64 2.17-326.el7_9
+   provider: glibc.i686 2.17-326.el7_9
+  dependency: sh-utils
+   provider: coreutils.x86_64 8.22-24.el7_9.2
+  dependency: systemd
+   provider: systemd.x86_64 219-78.el7_9.5
+  dependency: systemd-sysv
+   provider: systemd-sysv.x86_64 219-78.el7_9.5
+  dependency: textutils
+   provider: coreutils.x86_64 8.22-24.el7_9.2
+package: telnet.x86_64 1:0.17-66.el7
+  dependency: libc.so.6(GLIBC_2.15)(64bit)
+   provider: glibc.x86_64 2.17-326.el7_9
+  dependency: libncurses.so.5()(64bit)
+   provider: ncurses-libs.x86_64 5.9-14.20130511.el7_4
+  dependency: libtinfo.so.5()(64bit)
+   provider: ncurses-libs.x86_64 5.9-14.20130511.el7_4
+  dependency: libutil.so.1()(64bit)
+   provider: glibc.x86_64 2.17-326.el7_9
+  dependency: rtld(GNU_HASH)
+   provider: glibc.x86_64 2.17-326.el7_9
+   provider: glibc.i686 2.17-326.el7_9

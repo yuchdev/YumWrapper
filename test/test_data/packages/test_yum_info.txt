@@ -1,0 +1,45 @@
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+Loading mirror speeds from cached hostfile
+ * base: mirror.sabay.com.kh
+ * centos-sclo-rh: mirror.sabay.com.kh
+ * epel: mirror.sabay.com.kh
+ * extras: mirror.sabay.com.kh
+ * updates: mirror.sabay.com.kh
+Available Packages
+Name        : firefox
+Arch        : i686
+Version     : 91.10.0
+Release     : 1.el7.centos
+Size        : 108 M
+Repo        : updates/7/x86_64
+Summary     : Mozilla Firefox Web browser
+URL         : https://www.mozilla.org/firefox/
+License     : MPLv1.1 or GPLv2+ or LGPLv2+
+Description : Mozilla Firefox is an open-source web browser, designed for standards
+            : compliance, performance and portability.
+
+Name        : firefox-noscript
+Arch        : noarch
+Version     : 11.0.3
+Release     : 3.el7
+Size        : 543 k
+Repo        : epel/x86_64
+Summary     : JavaScript white list extension for Mozilla Firefox
+URL         : http://noscript.net/
+License     : GPLv2+
+Description : The NoScript extension provides extra protection for Firefox.
+            : It allows JavaScript, Java, Flash and other plug-ins to be executed only by
+            : trusted web sites of your choice (e.g. your online bank) and additionally
+            : provides Anti-XSS protection.
+
+Name        : firefox-pkcs11-loader
+Arch        : x86_64
+Version     : 3.13.6
+Release     : 1.el7
+Size        : 31 k
+Repo        : epel/x86_64
+Summary     : Helper script for Firefox that sets up the browser for authentication with Estonian ID-card
+URL         : https://github.com/open-eid/firefox-pkcs11-loader
+License     : LGPLv2+
+Description : This package provides a helper script for Firefox that sets up the browser for
+            : authentication with Estonian ID-card.

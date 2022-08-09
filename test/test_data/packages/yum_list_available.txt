@@ -1,0 +1,5 @@
+libwpg.x86_64                                                                      0.3.0-1.el7                                                       anaconda
+libwps.x86_64                                                                      0.4.7-1.el7                                                       base    
+libxcb.x86_64                                                                      1.13-1.el7                                                        anaconda
+libxkbcommon.x86_64                                                                0.7.1-3.el7                                                       anaconda
+libxkbcommon-x11.x86_64                                                            0.7.1-3.el7                                                       anaconda
