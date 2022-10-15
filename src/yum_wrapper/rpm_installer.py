@@ -96,6 +96,19 @@ class RpmInstaller:
             resulted_packages.append(package)
         return resulted_packages
 
+    def search(self, package_name: str) -> list[Package]:
+        """
+        Search for RPM packages using 'yum search'.
+        Response is a list of strings, which consists of a header, which we ignore, and then a list of packages.
+        Every package is a string with format "Name.Arch Version Repo".
+        :param package_name: package name to search
+        :return: list of Package objects
+        """
+        logger.info(f"Searching for {package_name}")
+        base_cmd = [self.tool, 'search', package_name]
+        ret_code, packages = execute(base_cmd)
+        return self._parse_packages(packages[1:])
+
     def list(self, packages: list = None, selection: str = None) -> (list[Package], list[Package]):
         """
         List RPM packages using 'yum list'.
