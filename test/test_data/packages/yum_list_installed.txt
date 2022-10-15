@@ -1,0 +1,5 @@
+libxml2-python.x86_64                                                              2.9.1-6.el7_9.6                                                   @updates 
+libxshmfence.x86_64                                                                1.2-1.el7                                                         @anaconda
+libxslt.x86_64                                                                     1.1.28-6.el7                                                      @anaconda
+libyaml.x86_64                                                                     0.1.4-11.el7_0                                                    @anaconda
+libzstd.x86_64                                                                     1.5.2-1.el7                                                       @epel

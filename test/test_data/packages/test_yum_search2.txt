@@ -1,0 +1,13 @@
+Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos, subscription-manager
+Loading mirror speeds from cached hostfile
+ * base: mirror.sabay.com.kh
+ * centos-sclo-rh: mirror.sabay.com.kh
+ * epel: mirror.sabay.com.kh
+ * extras: mirror.sabay.com.kh
+ * updates: mirror.sabay.com.kh
+================================================================== N/S matched: samba, smb ===================================================================
+php-pear-File-SMBPasswd.noarch : Class for managing SAMBA style password files
+python-smbc.x86_64 : Python bindings for libsmbclient API from Samba
+smbldap-tools.noarch : User and group administration tools for Samba/OpenLDAP
+
+  Full name and summary matches only, use "search all" for everything.

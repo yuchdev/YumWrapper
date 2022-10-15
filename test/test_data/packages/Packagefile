@@ -1,0 +1,14 @@
+# Dev
+binutils
+build-essential
+clang
+
+# System
+mc
+openssh-server
+rsync
+
+#Network
+curl
+net-tools
+wget
