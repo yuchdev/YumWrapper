@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
-import pathlib
 from setuptools import find_packages, setup
 
 # Package-wide name
@@ -14,14 +13,15 @@ sys.path.append(os.path.abspath(os.path.join(PROJECT_DIR, "src", PACKAGE_NAME)))
 # noinspection PyUnresolvedReferences,PyPackageRequirements
 from version import VERSION
 
-# The directory containing this file
-HERE = pathlib.Path(__file__).parent
-
-# The text of the README file
-README = (HERE / "README.md").read_text(encoding='utf8')
+HERE = os.path.abspath(os.path.dirname(__file__))
+MARKDOWN_PATH = os.path.join(HERE, 'README.md')
+LONG_DESCRIPTION = ""
+if os.path.exists(MARKDOWN_PATH):
+    with open(MARKDOWN_PATH, encoding='utf-8') as f:
+        LONG_DESCRIPTION = f.read()
 
 # Add possible dependencies here
-DEPENDENCIES = ["pathlib"]
+DEPENDENCIES = []
 
 # Github download link
 GITHUB_URL = "https://github.com/yuchdev/YumWrapper"
@@ -49,7 +49,7 @@ setup(
     author="Yurii Cherkasov",
     author_email="strategarius@protonmail.com",
     description="Python wrapper for Yum package manager",
-    long_description=README,
+    long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     url=GITHUB_URL,
     download_url=GITHUB_DOWNLOAD,
@@ -73,7 +73,7 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=find_packages(where=str(HERE / 'src')),
+    packages=find_packages(os.path.join(HERE, 'src')),
     package_dir={"": "src"},
     package_data={PACKAGE_NAME: ['defaults/*']},
     python_requires=">=3.8",
